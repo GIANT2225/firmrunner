@@ -26,10 +26,10 @@ const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
 // API Routes
 app.post("/api/waitlist", async (req, res) => {
-  const { name, email, firm_size, clients } = req.body;
+  const { name, email, firm_name, firm_size, clients } = req.body;
 
-  if (!name || !email || !firm_size || !clients) {
-    return res.status(400).json({ error: "All fields are required" });
+  if (!email) {
+    return res.status(400).json({ error: "Email is required" });
   }
 
   try {
@@ -37,7 +37,7 @@ app.post("/api/waitlist", async (req, res) => {
     if (supabase) {
       const { error: dbError } = await supabase
         .from("waitlist")
-        .insert([{ name, email, firm_size, clients, created_at: new Date().toISOString() }]);
+        .insert([{ name, email, firm_name, firm_size, clients, created_at: new Date().toISOString() }]);
 
       if (dbError) throw dbError;
     } else {

@@ -5,8 +5,10 @@ import { ProblemSection } from "../components/ProblemSection";
 import { WhatIsGiant } from "../components/WhatIsGiant";
 import { HowItWorks } from "../components/SolutionSection";
 import { AgentsSection } from "../components/WhyNowSection";
+import { FirmFitSection } from "../components/FirmFitSection";
 import { PositioningSection } from "../components/ProgressSection";
 import { Pricing } from "../components/Pricing";
+import { FounderNote } from "../components/FounderNote";
 import { FinalCTA } from "../components/FinalCTA";
 import { Footer } from "../components/Footer";
 import { InvestorPage } from "../components/InvestorAndProduct";
@@ -21,8 +23,10 @@ const LandingPage = () => (
       <WhatIsGiant />
       <HowItWorks />
       <AgentsSection />
+      <FirmFitSection />
       <PositioningSection />
       <Pricing />
+      <FounderNote />
       <FinalCTA />
     </main>
     <Footer />

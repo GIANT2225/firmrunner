@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Users, Lock } from "lucide-react";
+import { HeroCaptureForm } from "./HeroCaptureForm";
 
-export const Hero = () => (
+export const Hero = () => {
+  const WAITLIST_COUNT = 47;
+  return (
   <section className="bg-black pt-40 pb-24 border-b border-zinc-900">
     <div className="max-w-6xl mx-auto px-6 text-center">
 
       <h1 className="text-4xl md:text-6xl font-semibold tracking-tight max-w-4xl mx-auto text-white">
-        A firm answers 10 questions. The system runs everything else.
+        Stop chasing clients. Start closing books.
       </h1>
 
       <p className="mt-6 text-zinc-400 max-w-xl mx-auto">
-        Five AI agents handle intake, documents, deadlines, billing, and reporting.
+        FirmRunner automates client intake, engagement letters, document collection, deadline reminders, and billing follow-ups for accounting and bookkeeping firms with 2–20 staff.
       </p>
 
       <div className="mt-8 flex justify-center gap-6 text-sm text-zinc-500">
@@ -19,9 +22,17 @@ export const Hero = () => (
         <span>5 agents</span>
       </div>
 
-      <Link to="/apply" className="mt-10 inline-block bg-white text-black px-6 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition-all duration-300 ease-out hover:translate-y-[-2px]">
-        Request early access
-      </Link>
+      <HeroCaptureForm />
+
+      <p className="mt-4 text-sm text-zinc-500 text-center flex items-center gap-1 justify-center">
+        <Users size={14} />
+        <span>{WAITLIST_COUNT} accounting firms already on the waitlist</span>
+      </p>
+
+      <p className="mt-2 text-xs text-zinc-500 flex items-center gap-1 justify-center">
+        <Lock size={12} />
+        <span>Client data is encrypted and stored in isolated instances. We never train AI on your firm's data.</span>
+      </p>
 
       <p className="mt-3 text-xs text-zinc-500">
         Currently in development. Limited onboarding.
@@ -29,4 +40,5 @@ export const Hero = () => (
 
     </div>
   </section>
-);
+  );
+};
