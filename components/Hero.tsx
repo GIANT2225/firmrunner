@@ -1,8 +1,7 @@
-import { Users, Lock } from "lucide-react";
+import { Lock } from "lucide-react";
 import { HeroCaptureForm } from "./HeroCaptureForm";
 
 export const Hero = () => {
-  const WAITLIST_COUNT = 47;
   return (
   <section className="bg-black pt-40 pb-24 border-b border-zinc-900">
     <div className="max-w-6xl mx-auto px-6 text-center">
@@ -24,9 +23,8 @@ export const Hero = () => {
 
       <HeroCaptureForm />
 
-      <p className="mt-4 text-sm text-zinc-500 text-center flex items-center gap-1 justify-center">
-        <Users size={14} />
-        <span>{WAITLIST_COUNT} accounting firms already on the waitlist</span>
+      <p className="text-xs text-zinc-500 text-center mt-2">
+        Built in public · Pre-seed · Launching Q3 2026
       </p>
 
       <p className="mt-2 text-xs text-zinc-500 flex items-center gap-1 justify-center">

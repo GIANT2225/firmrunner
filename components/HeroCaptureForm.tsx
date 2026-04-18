@@ -74,7 +74,7 @@ export const HeroCaptureForm = () => {
         {status === "submitting" ? "Requesting..." : "Request Early Access for My Firm"}
       </button>
       <p className="text-xs text-zinc-500 text-center">
-        No credit card required. We onboard 10 firms per month.
+        Free to join. We will reach out personally before onboarding.
       </p>
     </form>
   );
