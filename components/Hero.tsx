@@ -27,10 +27,15 @@ export const Hero = () => {
         Built in public · Pre-seed · Launching Q3 2026
       </p>
 
-      <p className="mt-2 text-xs text-zinc-500 flex items-center gap-1 justify-center">
-        <Lock size={12} />
-        <span>Client data is encrypted and stored in isolated instances. We never train AI on your firm's data.</span>
-      </p>
+      <div className="flex flex-col items-center gap-1 mt-4">
+        <p className="text-xs text-zinc-500 text-center flex items-center gap-1 justify-center">
+          <Lock size={12} />
+          <span>Client data encrypted and isolated per firm. We never train AI on your data.</span>
+        </p>
+        <p className="text-xs text-zinc-500 text-center">
+          Built by an AI/ML engineer. Designed only for accounting and bookkeeping firms.
+        </p>
+      </div>
 
       <p className="mt-3 text-xs text-zinc-500">
         Currently in development. Limited onboarding.
