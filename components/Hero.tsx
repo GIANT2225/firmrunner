@@ -7,19 +7,16 @@ export const Hero = () => {
     <div className="max-w-6xl mx-auto px-6 text-center">
 
       <h1 className="text-4xl md:text-6xl font-semibold tracking-tight max-w-4xl mx-auto text-white">
-        Stop chasing clients. Start closing books.
+        The average small CPA firm loses 22–43 hours a month to admin. FirmRunner gets that time back.
       </h1>
 
       <p className="mt-6 text-zinc-400 max-w-xl mx-auto">
         FirmRunner automates client intake, engagement letters, document collection, deadline reminders, and billing follow-ups for accounting and bookkeeping firms with 2–20 staff.
       </p>
 
-      <div className="mt-8 flex justify-center gap-6 text-sm text-zinc-500">
-        <span>10 questions</span>
-        <span>$0 setup</span>
-        <span>22–43 hrs/month</span>
-        <span>5 agents</span>
-      </div>
+      <p className="mt-6 text-sm text-zinc-500 max-w-xl mx-auto">
+        The average 5–10 person CPA firm loses 22–43 hours a month to admin work. That is what FirmRunner recovers.
+      </p>
 
       <HeroCaptureForm />
 

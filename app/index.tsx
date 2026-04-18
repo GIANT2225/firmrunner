@@ -23,8 +23,8 @@ const LandingPage = () => (
       <WhatIsGiant />
       <HowItWorks />
       <AgentsSection />
-      <FirmFitSection />
       <PositioningSection />
+      <FirmFitSection />
       <Pricing />
       <FounderNote />
       <FinalCTA />

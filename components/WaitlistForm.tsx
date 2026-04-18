@@ -138,7 +138,7 @@ export const WaitlistForm = () => {
           </div>
           <h2 className="text-2xl font-bold">Not the right fit yet.</h2>
           <p className="text-brand-gray-muted">
-            FirmRunner is currently built for accounting firms with 1 to 10 staff. We are building something for larger firms. Join the waitlist and we will reach out when it is ready.
+            FirmRunner is currently built for accounting firms with 2–20 staff. We are building something for larger firms. Join the waitlist and we will reach out when it is ready.
           </p>
           <Link to="/" className="btn-primary w-full">Back to Home</Link>
         </div>

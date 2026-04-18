@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -8,7 +8,7 @@ export const HeroCaptureForm = () => {
   const [firmSize, setFirmSize] = useState("");
   const [status, setStatus] = useState<Status>("idle");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setStatus("submitting");
@@ -71,10 +71,10 @@ export const HeroCaptureForm = () => {
         disabled={!email || status === "submitting"}
         className="w-full bg-white text-black px-6 py-3 rounded-lg text-sm font-medium hover:opacity-90 transition-all duration-300 ease-out hover:translate-y-[-2px] disabled:opacity-50"
       >
-        {status === "submitting" ? "Requesting..." : "Request Early Access for My Firm"}
+        {status === "submitting" ? "Requesting..." : "Reserve Your Spot"}
       </button>
       <p className="text-xs text-zinc-500 text-center">
-        Free to join. We will reach out personally before onboarding.
+        We contact each firm personally within 24 hours. Limited to 10 firms.
       </p>
     </form>
   );

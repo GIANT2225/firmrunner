@@ -58,7 +58,7 @@ export const Pricing = () => (
 
           {/* Target Audience */}
           <p className="mt-6 text-sm text-zinc-400">
-            Designed for firms with 1–10 staff and 50–300 clients
+            Designed for US accounting and CPA firms with 2–20 staff
           </p>
 
           {/* CTA */}

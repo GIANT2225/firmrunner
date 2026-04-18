@@ -6,6 +6,10 @@ export const PositioningSection = () => (
         Systems replace tools
       </h2>
 
+      <p className="mt-6 text-zinc-400 text-center">
+        TaxDome is a CRM. Zapier requires manual setup. FirmRunner is the only system that runs your firm's operations automatically.
+      </p>
+
       <div className="mt-10 border border-zinc-800 rounded-xl overflow-hidden text-sm">
 
         <div className="grid grid-cols-2 border-b border-zinc-800">

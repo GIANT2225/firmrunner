@@ -29,7 +29,7 @@ export const InvestorPage = () => (
             <h2 className="text-2xl font-bold mb-6">The Opportunity</h2>
             <div className="space-y-4 text-brand-gray-muted">
               <p>
-                There are over 100,000 accounting firms in the US alone. Most have 1-10 staff. 
+                There are over 100,000 accounting firms in the US alone. Most have 2–20 staff.
                 They spend 30-40% of their time on non-billable administrative work.
               </p>
               <p>
